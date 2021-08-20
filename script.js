@@ -23,18 +23,34 @@ function generatePassword() {
       var charLowerCase = confirm('Would you like to use lowercase letters? OK for yes, Cancel for no.')
       if (charLowerCase) {
          result = result.concat(lC);
+         alert('The password will include lowercase letters.')
+      }
+      else {
+        alert('The password will not include lowercase letters.')
       }
       var charUpperCase = confirm('Would you like to use Uppercase Letters? OK for yes, Cancel for no.')
       if (charUpperCase) {
          result = result.concat(uC);
+         alert('The password will include Uppercase Letters.')
+      }
+      else {
+        alert('The password will not include Uppercase Letters.')
       }
       var useNumbers = confirm('Would you like to use numbers? OK for yes, Cancel for no.')
       if (useNumbers) {
          result = result.concat(num);
+         alert('The password will include numbers.')
+      }
+      else {
+        alert('The password will not include numbers.')
       }
       var useSymbols = confirm('Would you like to use special characters? OK for yes, cancel for no.')
       if (useSymbols) {
          result = result.concat(sym);
+         alert('The password will include special characters.')
+      }
+      else {
+        alert('The password will not include special characters.')
       }
     };
     console.log(result);
