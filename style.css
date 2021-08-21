@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #3f2e22; /* Sorry, bright colors hurt my head. */
+  background-color: black; /* Sorry, bright colors hurt my head. */
 }
 
 .wrapper {
@@ -31,11 +31,11 @@ header {
 }
 
 .card {
-  background-color: hsl(125, 64%, 22%); /* bright = bad; green = happy */
+  background-color: hsl(172, 37%, 33%); /* bright = bad; green = happy */
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(192, 38%, 41%); /* changed for contrast */ 
+  color: hsl(211, 20%, 79%); /* changed for contrast */ 
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -74,13 +74,14 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(63, 167, 63); /* red didn't fit the new color choices */
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   display: inline-block;
   font-size: 22px;
+  font-weight: 600;  /* changed font weight to stand out more */
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
