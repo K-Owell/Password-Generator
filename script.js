@@ -52,13 +52,17 @@ function generatePassword() {
       else {
         alert('The password will not include special characters.')
       }
+      if (charLowerCase === false && charUpperCase === false && useNumbers === false && useSymbols === false) {
+        alert('You must choose at least one parameter. Please try again.')
+        location.reload();
+      }
     };
     console.log(result);
 
     var resultRandom = ""
 
     for (var i = 0; i < pwdLength; i++) {
-      resultRandom = resultRandom + result[Math.floor(Math.random() * pwdLength)];
+      resultRandom = resultRandom + result[Math.floor(Math.random() * result.length)];
       
     }
     console.log(resultRandom);
